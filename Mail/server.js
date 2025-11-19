@@ -4,27 +4,28 @@ const nodemailer = require("nodemailer");
 require("dotenv").config();
 
 const app = express();
-app.use(
-  cors({
-    origin: function (origin, callback) {
-      const allowedOrigins = [
-        "http://localhost:3000",
-        "http://127.0.0.1:3000",
-        "http://localhost:5500",
-        "http://127.0.0.1:5500",
-        "null" // when file is opened directly
-      ];
+app.use(cors());
+// app.use(
+//   cors({
+//     origin: function (origin, callback) {
+//       const allowedOrigins = [
+//         "http://localhost:3000",
+//         "http://127.0.0.1:3000",
+//         "http://localhost:5500",
+//         "http://127.0.0.1:5500",
+//         "null" // when file is opened directly
+//       ];
 
-      if (!origin || allowedOrigins.includes(origin)) {
-        callback(null, true);
-      } else {
-        callback(new Error("Not allowed by CORS"));
-      }
-    },
-    methods: ["GET", "POST", "OPTIONS"],
-    allowedHeaders: ["Content-Type"],
-  })
-);
+//       if (!origin || allowedOrigins.includes(origin)) {
+//         callback(null, true);
+//       } else {
+//         callback(new Error("Not allowed by CORS"));
+//       }
+//     },
+//     methods: ["GET", "POST", "OPTIONS"],
+//     allowedHeaders: ["Content-Type"],
+//   })
+// );
 
 // Handle OPTIONS requests globally
 app.use((req, res, next) => {
