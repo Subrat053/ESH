@@ -5,11 +5,26 @@ require("dotenv").config();
 
 const app = express();
 app.use(cors({
-  origin: process.env.NODE_ENV === 'production' 
-    ? process.env.BASE_URL 
-    : ['http://localhost:5000', 'http://127.0.0.1:5000'],
-  credentials: true
+    origin: function (origin, callback) {
+        const allowed = [
+            "http://localhost:3000",
+            "http://127.0.0.1:3000",
+            "http://localhost:5500",
+            "http://127.0.0.1:5500",
+            "null"
+        ];
+
+        if (!origin || allowed.includes(origin)) {
+            callback(null, true);
+        } else {
+            callback(new Error("Not allowed by CORS"));
+        }
+    },
+    methods: ["GET", "POST", "OPTIONS"],
+    allowedHeaders: ["Content-Type"]
 }));
+
+app.options("*", cors());
 app.use(express.json());
 
 // POST API to send mail
