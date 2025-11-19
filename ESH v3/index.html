@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="ESH Vision Venture - Strategic Finance & Sustainability Advisory">
+  <title>ESH Vision Venture | Strategic Finance &amp; Sustainability Advisory</title>
+  <link rel="icon" href="./Images/logo.png">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link rel="stylesheet" href="updated-style.css">
+  <!-- Font & Icons -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;550;700&display=swap" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+
+<body>
+  <nav class="navbar">
+    <div class="container nav-content">
+      <a href="#hero" class="logo">
+        <!-- https://user-gen-media-assets.s3.amazonaws.com/seedream_images/9f359afb-c931-4405-94b0-d574b568be1f.png -->
+        <img src="./Images/logo.png" alt="ESH Vision Venture" class="logo-image">
+        <span class="logo-text">ESH Vision Venture</span>
+      </a>
+      <button class="nav-hamburger" aria-label="Toggle Menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <ul class="nav-links">
+        <li><a href="#hero" class="nav-item">Home</a></li>
+        <li><a href="#why" class="nav-item">Why Choose Us</a></li>
+        <li><a href="#services" class="nav-item">What We Deliver</a></li>
+        <li><a href="#team" class="nav-item">Our Team</a></li>
+        <li><a href="#contact" class="nav-item">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+  <main>
+    <!-- HERO SECTION -->
+    <section id="hero" class="hero-section">
+      <div class="hero-bg">
+        <div class="hero-gradient"></div>
+        <div class="hero-overlay"></div>
+      </div>
+      <div class="container hero-content fade-up">
+        <h1>ESH Vision Venture</h1>
+        <h2 class="tagline">A Catalyst for Capital, Strategy, and Global-Scale Transformation</h2>
+        <p class="subtitle">Bridging strategic finance, sustainable innovation, and international market expertise</p>
+        <button class="btn btn--primary btn--lg hero-cta" onclick="scrollToSection('services')">Get Started</button>
+        <div class="hero-icons">
+          <div class="icon finance-icon"></div>
+          <div class="icon sustainability-icon"></div>
+          <div class="icon global-icon"></div>
+        </div>
+      </div>
+
+    </section>
+
+    <!-- WHY CHOOSE US SECTION -->
+    <section id="why" class="why-section fade-in">
+      <div class="container">
+        <h2 class="section-title" style="color: #fff;">Why Choose Us?</h2>
+        <div class="why-grid">
+          <!-- Feature Cards -->
+          <div class="card why-card fade-up">
+            <div class="why-icon why-icon1"></div>
+            <h3>Integrated Capital &amp; Advisory Platform</h3>
+            <p>We combine deep financial structuring with cross-border legal strategy, delivering investor ready
+              narratives and institutional-grade solutions.</p>
+          </div>
+          <div class="card why-card fade-up">
+            <div class="why-icon why-icon2"></div>
+            <h3>Institutional Precision</h3>
+            <p>We craft compelling pitch decks, robust financial models, and data-backed valuations tailored for serious
+              capital engagement and fund raise.</p>
+          </div>
+          <div class="card why-card fade-up">
+            <div class="why-icon why-icon3"></div>
+            <h3>Specialised Fund Raise</h3>
+            <p>Our team deeply analyses the sector to which the company belongs and then curates a tailor-made list of
+              investors according to the round in which funds are being raised.</p>
+          </div>
+          <div class="card why-card fade-up">
+            <div class="why-icon why-icon4"></div>
+            <h3>Access to Impact-Driven Capital</h3>
+            <p>Through our curated network of institutional investors, climate-focused funds, and private lenders, we
+              align capital with long-term, purpose-driven growth.</p>
+          </div>
+          <div class="card why-card fade-up">
+            <div class="why-icon why-icon5"></div>
+            <h3>Multi-Sectoral Expertise</h3>
+            <p>From commodities and infrastructure to tokenized finance and ESG-linked assets, we support innovation
+              across traditional and digital finance sectors.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SERVICES SECTION -->
+    <!-- <section id="services" class="services-section fade-in">
+      <div class="container">
+        <h2 class="section-title">What We Deliver</h2>
+        <p class="section-subtitle">Curated Advisory Across Finance, Strategy, and Structured Growth</p>
+        <div class="services-list">
+          <div class="service-card fade-up service-bg1">
+            <div class="service-icon service-icon1"></div>
+            <h3>Capital Markets Readiness &amp; Financial Architecture</h3>
+            <p>We equip businesses with bespoke investment materials meticulously crafted pitch decks, dynamic
+              multiscenario financial models, and institutional grade valuations positioning them for funding success.
+            </p>
+          </div>
+          <div class="service-card fade-up service-bg2">
+            <div class="service-icon service-icon2"></div>
+            <h3>Cross-Border Structuring &amp; Transaction Advisory</h3>
+            <p>We provide strategic counsel on transnational fundraising, mergers, and restructurings establishing
+              optimal legal entities, governance frameworks, and capital flow pathways to enhance regulatory compliance.
+              </p>
+          </div>
+          <div class="service-card fade-up service-bg3">
+            <div class="service-icon service-icon3"></div>
+            <h3>Climate &amp; Sustainable Finance Origination</h3>
+            <p>Our fundraising vertical specializes in ESG and climate-aligned transactions, raising equity, debt, or
+              blended capital with a focus on sustainable growth and long-term enterprise value maximization.</p>
+          </div>
+          <div class="service-card fade-up service-bg4">
+            <div class="service-icon service-icon4"></div>
+            <h3>Capital Origination &amp; Fundraising </h3>
+            <p>Our fundraising vertical supports transactions across sectors, raising equity, debt, or blended capital
+              to help businesses scale efficiently and strengthen long-term enterprise value.</p>
+          </div>
+          <div class="service-card fade-up service-bg5">
+            <div class="service-icon service-icon5"></div>
+            <h3>Asset Tokenization &amp; Digital Capital Innovation</h3>
+            <p>We enable clients to tokenize non-traditional assets cinematic IP, infrastructure, carbon credits, and
+              yield generating products bridging the gap between real world assets and blockchain enabled capital
+              markets.</p>
+          </div>
+        </div>
+      </div>
+    </section> -->
+    <!-- <section class="services-section">
+      <h2>What We Deliver</h2>
+      <div class="services-grid">
+        <div class="service-card">
+          <h3>Capital Markets Readiness & Financial Architecture</h3>
+          <p>We equip businesses with bespoke investment materials—meticulously crafted pitch decks, dynamic
+            multi-scenario financial models, and institutional-grade valuations—positioning them for funding success.
+          </p>
+        </div>
+        <div class="service-card">
+          <h3>Cross-Border Structuring & Transaction Advisory</h3>
+          <p>We provide strategic counsel on transnational fundraising, mergers, and restructurings—establishing optimal
+            legal entities, governance frameworks, and capital flow pathways to enhance regulatory compliance and fiscal
+            efficiency.</p>
+        </div>
+        <div class="service-card">
+          <h3>Climate & Sustainable Finance Origination</h3>
+          <p>Our fundraising vertical specializes in ESG and climate-aligned transactions, raising equity, debt, or
+            blended capital with a focus on sustainable growth and long-term enterprise value maximization.</p>
+        </div>
+        <div class="service-card">
+          <h3>Global Trade Facilitation & Commodity Flow Management</h3>
+          <p>Leveraging our embedded network of global suppliers and off-takers, we orchestrate complex international
+            trade transactions across Agri-commodities, edibles, energy inputs, and industrial assets.</p>
+        </div>
+        <div class="service-card">
+          <h3>Asset Tokenization & Digital Capital Innovation</h3>
+          <p>We enable clients to tokenize non-traditional assets—cinematic IP, infrastructure, carbon credits, and
+            yield-generating products—bridging the gap between real-world assets and blockchain-enabled capital markets.
+          </p>
+        </div>
+      </div>
+    </section> -->
+
+
+
+    <section class="services-section" id="services">
+      <h2>What We Deliver</h2>
+      <p>Curated Advisory Across Finance, Strategy, and Structured Growth</p>
+      <div class="services-grid">
+        <div class="service-card">
+          <div><img src="./Images/pic1.jpg" alt=""></div>
+          <h3>Capital Markets Readiness & Financial Architecture</h3>
+          <p>We equip businesses with bespoke investment materials, meticulously crafted pitch decks, dynamic
+            multi-scenario financial models, and institutional grade valuations positioning them for funding success.
+          </p>
+        </div>
+        <div class="service-card">
+          <div><img src="./Images/pic2.jpg" alt=""></div>
+
+          <h3>Cross-Border Structuring & Transaction Advisory</h3>
+          <p>We provide strategic counsel on transnational fundraising, mergers, and restructurings establishing optimal
+            legal entities, governance frameworks, and capital flow pathways to enhance regulatory compliance. By
+            coordinating with legal, tax, and regulatory advisors across jurisdictions, we simplify complexity so
+            cross-border transactions can be executed efficiently and with confidence.</p>
+        </div>
+        <div class="service-card">
+          <div><img src="./Images/pic3.jpg" alt=""></div>
+
+          <h3>Capital & ESG Origination & Fundraising</h3>
+          <p>Our fundraising vertical supports transactions across sectors, raising equity, debt, or blended capital,
+            including ESG and climate-aligned mandates, to help businesses scale efficiently and strengthen long-term
+            enterprise value. We design and run targeted capital-raising processes, curate both traditional and
+            impact-focused investors, and support negotiations from initial engagement through to term sheet and
+            closing.</p>
+        </div>
+        <div class="service-card">
+          <div><img src="./Images/pic4.jpg" alt=""></div>
+
+          <h3>Asset Tokenization & Digital Capital Innovation</h3>
+          <p>We enable clients to tokenize non-traditional assets cinematic IP, infrastructure, carbon credits, and
+            yield generating products bridging the gap between real world assets and blockchain enabled capital markets.
+            Our team advises on token and instrument design, economics, and regulatory considerations while connecting
+            issuers with institutional-grade digital asset platforms and investors</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- TEAM SECTION -->
+    <section id="team" class="team-section fade-in">
+      <div class="container">
+        <h2 class="section-title">Our Core Team</h2>
+        <p class="section-subtitle">Strategic Minds Driving Global Impact</p>
+        <div class="team-list">
+          <div class="card team-card fade-up">
+            <div class="team-image-wrapper">
+              <img src="./Images/Vijay original.jpeg" alt="Mr. Vijay Subramanian" class="team-headshot">
+            </div>
+            <h3>Mr. Vijay Subramanian</h3>
+            <p class="team-role">Founder &amp; Carbon Credit Tokenization Expert</p>
+            <p class="team-bio">A founder at heart and hustler in his actions, with deep expertise in financial
+              modelling and valuation, honed through hands-on roles including at S&amp;P Global. He is now pioneering
+              the tokenisation of carbon credits, transforming climate assets into investable, blockchain-backed
+              instruments. At the intersection of sustainability, finance, and technology, he is driving innovation in
+              decentralised climate finance.</p>
+          </div>
+          <div class="card team-card fade-up">
+            <div class="team-image-wrapper">
+              <img src="./Images/Ramakrishnan.png" alt="Mr. Prabhakar Ramakrishnan" class="team-headshot">
+            </div>
+            <h3>Mr. Prabhakar Ramakrishnan</h3>
+            <p class="team-role">Growth &amp; Strategy Consultant</p>
+            <p class="team-bio">A dynamic Growth and Strategy Consultant with international exposure and a strong
+              academic foundation from Warwick Business School. He has led transformative roles in business strategy and
+              deal execution across sectors, contributing significantly to high-impact financial and operational
+              outcomes. Known for his dedication and work ethic, Prabhakar stands out as a disciplined and reliable
+              leader who excels in high-pressure, outcome-driven environments.</p>
+          </div>
+          <div class="card team-card fade-up">
+            <div class="team-image-wrapper">
+              <img src="./Images/samarth_new.png" alt="Mr. Samarth Agrawal" class="team-headshot">
+            </div>
+            <h3>Mr. Samarth Agrawal</h3>
+            <p class="team-role">Investment Banking &amp; Fundraising Specialist</p>
+            <p class="team-bio">With years of hands-on experience in boutique investment banking, Samarth Agrawal has
+              led high-impact equity fundraising initiatives for startups, securing capital from VCs, private equity
+              firms, and angel investors. He later pivoted to structured debt funding, developing and implementing
+              robust inbound and outbound financial and legal frameworks. His deep expertise lies in fundraising,
+              financial structuring, and strategic financial planning for early-stage companies.</p>
+          </div>
+          <div class="card team-card fade-up">
+            <div class="team-image-wrapper">
+              <img src="./Images/Abhinav Rangapa org.png" alt="Mr. Samarth Agrawal" class="team-headshot">
+            </div>
+            <h3>Abhinav Rangappa</h3>
+            <p class="team-role">Investment Analyst</p>
+            <p class="team-bio">Defined by curiosity and a hunger to improve, he approaches finance with a
+              learning-first mindset. He holds an MSc in Business and Finance from Warwick Business School. In his
+              current role as an Investment Analyst, he focuses on managing investor relations and helps the back-end
+              team with various financial modelling and valuations. His earlier experience as a retail trader in the
+              Indian equity markets sparked his interest in pursuing a career in finance.</p>
+          </div>
+          <div class="card team-card fade-up">
+            <div class="team-image-wrapper">
+              <img src="./Images/Srushti Sanjay.jpg" alt="Mr. Samarth Agrawal" class="team-headshot">
+            </div>
+            <h3>Srushti Sanjay</h3>
+            <p class="team-role">Business Development &amp; Client Relations Analyst.</p>
+            <p class="team-bio">A business development and client relations analyst with a strong foundation
+              in financial analysis and strategic thinking. She has developed skills in understanding business models,
+              supporting client engagement, and contributing to initiatives that drive business growth. With strong
+              communication and interpersonal abilities, she brings a proactive and detail-oriented approach to building
+              and maintaining client relationships, delivering insights, and supporting organisational objectives.</p>
+          </div>
+          <div class="card team-card fade-up">
+            <div class="team-image-wrapper">
+              <img src="./Images/Isha Shivaprasad.jpg" alt="Mr. Samarth Agrawal" class="team-headshot">
+            </div>
+            <h3>Isha Shivaprasad </h3>
+            <p class="team-role">Business Development &amp; Investor Relations Manager</p>
+            <p class="team-bio">An emerging professional in business development and investor
+              relations management, bringing strong people skills and a global perspective to early-stage projects. She
+              has experience supporting strategic research, financial insights, and operational assessments that help
+              teams make clear, data-driven decisions. Isha is passionate about turning complex information into
+              actionable recommendations that support growth and strategic alignment.</p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT SECTION -->
+    <section id="contact" class="contact-section fade-in">
+      <div class="container contact-content">
+        <div class="contact-form-wrapper">
+          <h2 class="section-title" style="color: rgb(91, 108, 112);">Get in Touch</h2>
+          <form class="contact-form" id="contactForm">
+            <div class="form-group">
+              <label class="form-label" for="name">Name*</label>
+              <input type="text" id="name" name="name" class="form-control" required>
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="email">Email*</label>
+              <input type="email" id="email" name="email" class="form-control" required>
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="company">Company/Organization</label>
+              <input type="text" id="company" name="company" class="form-control">
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="message">Message*</label>
+              <textarea id="message" name="message" rows="4" class="form-control" required></textarea>
+            </div>
+            <button type="submit" class="btn btn--primary btn--lg">Submit</button>
+          </form>
+        </div>
+        <div class="contact-info">
+          <h3>ESH Vision Venture, UK</h3>
+          <p><strong>Address:</strong> Regus, Blythe Valley Park, Solihull B90 8AB</p>
+          <p><strong>Email:</strong> <a
+              href="mailto:samarth.agrawal@eshvisionventures.com">samarth.agrawal@eshvisionventures.com</a></p>
+          <p><strong>Phone:</strong> <a href="tel:+447774493305">+44 7774493305</a></p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-content">
+      <div class="footer-logo">ESH Vision Venture</div>
+      <div class="footer-links">
+        <a href="#hero">Home</a>
+        <a href="#why">Why Choose Us</a>
+        <a href="#services">Services</a>
+        <a href="#team">Team</a>
+        <a href="#contact">Contact</a>
+      </div>
+      <div class="footer-social">
+        <span class="social-icon social-icon-linkedin" title="LinkedIn"></span>
+        <span class="social-icon social-icon-x" title="Twitter/X"></span>
+        <span class="social-icon social-icon-email" title="Email"></span>
+      </div>
+    </div>
+    <p class="footer-copyright">&copy; 2025 ESH Vision Venture. All rights reserved.</p>
+  </footer>
+
+  <!-- Scripts for interactivity, parallax, scroll & fade-in animations -->
+  <script src="app.js"></script>
+  
+</body>
+<script>
+document.getElementById("contactForm").addEventListener("submit", async function(e) {
+    e.preventDefault();
+
+    const formData = {
+        name: document.getElementById("name").value,
+        email: document.getElementById("email").value,
+        company: document.getElementById("company").value,
+        message: document.getElementById("message").value,
+    };
+
+    const response = await fetch("https://esh-email-setup.onrender.com/send-mail", {
+        method: "POST",
+        headers: {
+            "Content-Type": "application/json"
+        },
+        body: JSON.stringify(formData)
+    });
+
+    const result = await response.json();
+
+    if (result.success) {
+        alert("Your message has been sent successfully!");
+        document.getElementById("contactForm").reset();
+    } else {
+        alert("Failed to send message. Try again.");
+    }
+});
+</script>
+
+
+</html>
